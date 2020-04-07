@@ -1,0 +1,17 @@
+<%- include('includes/header.ejs') %>
+    
+    <main>
+        <h1>All Names</h1>
+        <% if(nameList.length>0) {%>
+            <ul>
+                <% for(let names of nameList) {%>
+                    <li><%= names.name%></li>
+                <% } %>
+            </ul>
+        <% } else {%>
+            <h1>No Names Found</h1>
+        <% } %>
+        <button class="btn button"><a href="/admin">Home</a></button>
+    </main>
+
+<%- include('includes/footer.ejs') %>

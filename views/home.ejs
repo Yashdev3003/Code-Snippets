@@ -1,0 +1,13 @@
+<%- include('includes/header.ejs') %>
+    
+    <main>
+        <form class="name-form" action="/admin/names" method="POST">
+            <div class="form-control">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <button class="btn" type="submit">Add Your Name</button>
+        </form>
+    </main>
+
+<%- include('includes/footer.ejs') %>
